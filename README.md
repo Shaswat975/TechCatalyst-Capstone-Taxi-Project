@@ -21,8 +21,11 @@ Tableau (Analytics and Dashboarding)
 
 
 Data is stored in Raw Amazon S3 Bucket.
+
 Data is crawled, processed, and sent to Transformed Amazon S3 Bucket as parquet files.
+
 Data is exported to snowflake, for SQL analytics. Data is joined and converted into a data analytic view.
 
 The Taxi View data is imported into Tableau for visualizations and additional insights. 
+
 The Taxi View data is imported into databricks for machine learning analysis using PyCaret and Prophet. (Python 3.11)
