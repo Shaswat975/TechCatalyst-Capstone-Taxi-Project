@@ -17,7 +17,7 @@ Snowflake (Data Warehouse and SQL Insights)
 Databricks (Machine Learning Insights)
 Tableau (Analytics and Dashboarding)
 
-![Architecture Diagram](assets/image.png)
+![Architecture Diagram](architecture_diagram.png)
 
 
 Data is stored in Raw Amazon S3 Bucket.
@@ -25,4 +25,4 @@ Data is crawled, processed, and sent to Transformed Amazon S3 Bucket as parquet 
 Data is exported to snowflake, for SQL analytics. Data is joined and converted into a data analytic view.
 
 The Taxi View data is imported into Tableau for visualizations and additional insights. 
-The Taxi View data is moved to databricks for machine learning analysis using PyCaret and Prophet.
+The Taxi View data is imported into databricks for machine learning analysis using PyCaret and Prophet. (Python 3.11)
